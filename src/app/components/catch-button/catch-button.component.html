@@ -1,4 +1,38 @@
-<button class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out">
-    Catch this Pokemon!
+<ng-container *ngIf="!loading; else loader">
+  <ng-container
+    *ngIf="isCaught; then releasePokemon; else catchPokemon"
+    class=""
+  ></ng-container>
+
+  <ng-template #releasePokemon
+    ><button
+      class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full mr-4"
+      (click)="onCatchClick()"
+    >
+      Release this Pokemon!
+    </button></ng-template
+  >
+
+  <ng-template #catchPokemon
+    ><button
+      class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full"
+      (click)="onCatchClick()"
+    >
+      Catch this Pokemon!
+    </button></ng-template
+  >
+</ng-container>
+
+<ng-template #loader>
+  <button class="py-2 px-4 rounded-full relative">
+    <div
+      class="absolute w-full h-full top-0 left-0 flex justify-center items-center"
+    >
+      <img
+        src="https://media.tenor.com/CpRW4WUGa3IAAAAi/pok%C3%A9ball-pok%C3%A9mon.gif"
+        alt="Pokeball"
+        class="w-17 h-15"
+      />
+    </div>
   </button>
-  
+</ng-template>
