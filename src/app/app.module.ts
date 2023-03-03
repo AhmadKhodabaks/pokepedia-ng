@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { PokemonListComponent } from './components/pokemon-list/pokemon-list.component';
 import { PokemonListItemComponent } from './components/pokemon-list-item/pokemon-list-item.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { CatchButtonComponent } from './components/catch-button/catch-button.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     LoginFormComponent,
     PokemonListComponent,
     PokemonListItemComponent,
-    NavbarComponent
+    NavbarComponent,
+    CatchButtonComponent
   ],
   imports: [
     BrowserModule,
