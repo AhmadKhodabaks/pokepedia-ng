@@ -1,0 +1,50 @@
+<!-- <form #loginForm="ngForm" (ngSubmit)="loginSubmit(loginForm)">
+  <fieldset>
+    <label for="username"></label>
+    <input
+      type="text"
+      ngModel
+      #username="ngModel"
+      name="username"
+      id="username"
+      placeholder="johndoe"
+    />
+  </fieldset>
+  <button type="submit">Login</button>
+</form> -->
+
+<div class="flex items-center justify-center h-screen bg-pokemon">
+  <div class="relative p-6 bg-white rounded-lg shadow-lg">
+    <div class="absolute top-0 left-0 w-60 h-10 bg-pokeball opacity-85"></div>
+    <div class="flex justify-center mb-4">
+      <img
+        src="https://logodownload.org/wp-content/uploads/2017/08/pokemon-logo.png"
+        alt="Pokemon logo"
+        class="w-15 h-12"
+      />
+    </div>
+    <form #loginForm="ngForm" (ngSubmit)="loginSubmit(loginForm)">
+      <div class="relative mb-4">
+        <label for="username" class="leading-7 text-sm text-gray-600"
+          >Username</label
+        >
+        <input
+          type="text"
+          ngModel
+          #username="ngModel"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+          class="w-full px-3 py-2 text-sm text-gray-700 placeholder-gray-400 bg-gray-100 border-0 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-colors duration-200 ease-in-out"
+        />
+        <div class="absolute inset-y-0 right-0 flex items-center px-2"></div>
+      </div>
+      <button
+        type="submit"
+        class="flex items-center justify-center w-full px-4 py-2 mt-4 text-sm text-white bg-yellow-500 rounded-lg hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 transition-colors duration-200 ease-in-out"
+      >
+        <span class="mr-2">Log In</span>
+      </button>
+    </form>
+  </div>
+</div>

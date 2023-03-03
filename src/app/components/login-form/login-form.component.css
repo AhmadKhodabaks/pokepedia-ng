@@ -1,0 +1,18 @@
+  .bg-pokemon {
+    background-image: url('https://www.freeiconspng.com/uploads/poke-ball-icon-27.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .bg-pokeball {
+    background-image: url('https://www.freeiconspng.com/uploads/pokeball-pokemon-ball-png-images-4.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }  
+ 
+  input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.5);
+  }
+  
