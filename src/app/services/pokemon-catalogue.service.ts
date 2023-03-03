@@ -63,5 +63,4 @@ export class PokemonCatalogueService {
     return Number(url.split("/").filter(Boolean).pop());
   }
 
-
 }
