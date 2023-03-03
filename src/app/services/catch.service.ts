@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { finalize, Observable, tap } from 'rxjs';
+import { Observable, tap } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Pokemon } from '../models/pokemon.model';
 import { User } from '../models/user.model';
@@ -13,12 +13,6 @@ const { apiKey, apiUsers } = environment;
   providedIn: 'root'
 })
 export class CatchService {
-
-  private _loading: boolean = false;
-
-  get loading(): boolean {
-    return this._loading;
-  }
 
   constructor(private readonly pokemonService: PokemonCatalogueService, private readonly userService: UserService, private http: HttpClient) { }
 
@@ -46,8 +40,6 @@ export class CatchService {
       "x-api-key": apiKey,
     });
 
-    this._loading = true;
-
     return this.http.patch<User>(`${apiUsers}/${user.id}`,
       {
         pokemon: [...user.pokemon]
@@ -57,9 +49,6 @@ export class CatchService {
       .pipe(
         tap((updatedUser: User) => {
           this.userService.user = updatedUser;
-        }),
-        finalize(() => {
-          this._loading = false;
         })
       );
   }

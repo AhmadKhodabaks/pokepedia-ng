@@ -14,7 +14,6 @@ export class CatchButtonComponent implements OnInit {
   public isCaught: boolean = false;
   public loading: boolean = false;
 
-
   @Input() pokemonId: number = -1;
 
   constructor(private readonly catchService: CatchService, private userService: UserService) {}
