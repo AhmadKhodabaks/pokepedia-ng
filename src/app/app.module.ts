@@ -14,6 +14,7 @@ import { PokemonListItemComponent } from './components/pokemon-list-item/pokemon
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CatchButtonComponent } from './components/catch-button/catch-button.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     PokemonListComponent,
     PokemonListItemComponent,
     NavbarComponent,
-    CatchButtonComponent
+    CatchButtonComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
