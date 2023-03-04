@@ -13,6 +13,7 @@ import { PokemonListComponent } from './components/pokemon-list/pokemon-list.com
 import { PokemonListItemComponent } from './components/pokemon-list-item/pokemon-list-item.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CatchButtonComponent } from './components/catch-button/catch-button.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { CatchButtonComponent } from './components/catch-button/catch-button.com
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    NgxPaginationModule,
     AppRoutingModule
   ],
   providers: [],

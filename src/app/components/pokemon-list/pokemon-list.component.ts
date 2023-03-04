@@ -10,4 +10,6 @@ export class PokemonListComponent {
 
   @Input() pokemons: Pokemon[] = [];
 
+  p: number = 1;
+
 }
