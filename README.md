@@ -61,7 +61,7 @@ The login is an area where user can create and login with just a username.
 The pokemon list is an area where user can catch pokemons and release pokemons.
 The profile is an area where user can see the caught pokemons and has the option to release the pokemons.
 
-See [React_Lost in Translation.pdf](https://github.com/AhmadKhodabaks/pokepedia-ng/blob/master/Angular_Pokemon Trainer.pdf) for more detailed requirements for this assignment.
+See [Angular_Pokemon Trainer.pdf](https://github.com/AhmadKhodabaks/pokepedia-ng/blob/main/Angular_Pokemon%20Trainer.pdf) for more detailed requirements for this assignment.
 
 Created by Ahmad Khodabaks & Meg Stefouli.
 
