@@ -3,6 +3,7 @@ import { Pokemon } from 'src/app/models/pokemon.model';
 import { User } from 'src/app/models/user.model';
 import { UserService } from 'src/app/services/user.service';
 
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.page.html',
@@ -23,4 +24,5 @@ export class ProfilePage {
 
   constructor(private readonly userService: UserService) { }
 
+  
 }

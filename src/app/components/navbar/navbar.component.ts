@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { User } from 'src/app/models/user.model';
 import { UserService } from 'src/app/services/user.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-navbar',
@@ -13,6 +15,12 @@ export class NavbarComponent {
     return this.userService.user;
   }
 
-  constructor(private readonly userService: UserService) { }
+  constructor(private readonly userService: UserService, private readonly router: Router) { }
+
+  logout() {
+    this.userService.logout();
+    this.router.navigate(['/']); // redirect to login page
+  }
+
 
 }

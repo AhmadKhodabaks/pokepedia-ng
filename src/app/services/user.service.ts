@@ -43,8 +43,7 @@ export class UserService {
     }
   }
 
-
-
-
-
+  public logout() {
+    this.user = undefined;
+  }
 }
